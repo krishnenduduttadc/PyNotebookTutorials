@@ -1,0 +1,13 @@
+digraph FactoryPattern {
+	Client [label=Client]
+	Factory [label="AnimalFactory
+(create_animal)"]
+	Animal [label="Animal (abstract)"]
+	Dog [label=Dog]
+	Cat [label=Cat]
+	Client -> Factory
+	Factory -> Dog
+	Factory -> Cat
+	Dog -> Animal [label=inherits]
+	Cat -> Animal [label=inherits]
+}

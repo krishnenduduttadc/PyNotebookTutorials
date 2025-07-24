@@ -1,0 +1,11 @@
+digraph DecoratorPattern {
+	Component [label="Coffee (interface)"]
+	ConcreteComponent [label=SimpleCoffee]
+	Decorator [label=CoffeeDecorator]
+	MilkDecorator [label=MilkDecorator]
+	SugarDecorator [label=SugarDecorator]
+	ConcreteComponent -> Component [label=implements]
+	Decorator -> Component [label=implements]
+	MilkDecorator -> Decorator [label=extends]
+	SugarDecorator -> Decorator [label=extends]
+}

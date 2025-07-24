@@ -1,0 +1,9 @@
+digraph DependencyInversion {
+	Application [label="Application (High-level module)"]
+	Database [label="Database (Abstraction)"]
+	MySQLDatabase [label="MySQLDatabase (Low-level module)"]
+	MongoDatabase [label="MongoDatabase (Low-level module)"]
+	Application -> Database [label="depends on"]
+	MySQLDatabase -> Database [label=implements]
+	MongoDatabase -> Database [label=implements]
+}
