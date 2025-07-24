@@ -1,0 +1,10 @@
+// Class Diagram
+digraph {
+	A [label=Animal]
+	D [label=Dog]
+	C [label=Cat]
+	D -> A [label=inherits]
+	C -> A [label=inherits]
+	B [label=Brain]
+	A -> B [label="has-a (composition)"]
+}

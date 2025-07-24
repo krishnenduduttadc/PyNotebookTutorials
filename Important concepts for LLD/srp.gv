@@ -1,0 +1,7 @@
+digraph SRP {
+	User [label="User
+(name, email)"]
+	UserNotifier [label="UserNotifier
+(send_email)"]
+	UserNotifier -> User [label=uses]
+}

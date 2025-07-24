@@ -1,0 +1,8 @@
+digraph "🧼 SOAP API" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="🧼 SOAP API" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"1c56fd44d61e4ee6a1a35d6efa19d49d" [label="SOAP Client" height=1.9 image="./soap-icon.png" shape=none]
+	"67ac5cd3c44a4b99acd0ca24b9482ddc" [label="SOAP Server" height=1.9 image="./soap-icon.png" shape=none]
+	"1c56fd44d61e4ee6a1a35d6efa19d49d" -> "67ac5cd3c44a4b99acd0ca24b9482ddc" [label="XML over HTTP" dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}

@@ -1,0 +1,11 @@
+digraph ObserverPattern {
+	Subject [label=Subject]
+	Observer [label="Observer (interface)"]
+	EmailObserver [label=EmailObserver]
+	SMSObserver [label=SMSObserver]
+	Subject -> Observer [label="maintains list of"]
+	Observer -> EmailObserver [label=implements]
+	Observer -> SMSObserver [label=implements]
+	Subject -> EmailObserver [label=notifies]
+	Subject -> SMSObserver [label=notifies]
+}
