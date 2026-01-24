@@ -1,0 +1,3 @@
+LangChain is a framework for building applications with large language models.
+It helps with prompting, memory, retrieval, agents, and more.
+RAG allows models to answer questions using external documents.
